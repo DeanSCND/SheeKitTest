@@ -14,6 +14,9 @@
 		050C0AB727BAE89600CBD60D /* SheeKitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050C0AB627BAE89600CBD60D /* SheeKitTestTests.swift */; };
 		050C0AC127BAE89600CBD60D /* SheeKitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050C0AC027BAE89600CBD60D /* SheeKitTestUITests.swift */; };
 		050C0AC327BAE89600CBD60D /* SheeKitTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050C0AC227BAE89600CBD60D /* SheeKitTestUITestsLaunchTests.swift */; };
+		050C0AD027BAE8AE00CBD60D /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050C0ACF27BAE8AE00CBD60D /* ApplicationState.swift */; };
+		050C0AD227BAE97400CBD60D /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050C0AD127BAE97400CBD60D /* SubView.swift */; };
+		050C0AD527BAEB9000CBD60D /* SheeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 050C0AD427BAEB9000CBD60D /* SheeKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		050C0ABC27BAE89600CBD60D /* SheeKitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheeKitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050C0AC027BAE89600CBD60D /* SheeKitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheeKitTestUITests.swift; sourceTree = "<group>"; };
 		050C0AC227BAE89600CBD60D /* SheeKitTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheeKitTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		050C0ACF27BAE8AE00CBD60D /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		050C0AD127BAE97400CBD60D /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050C0AD527BAEB9000CBD60D /* SheeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,8 @@
 				050C0AA727BAE89300CBD60D /* ContentView.swift */,
 				050C0AA927BAE89600CBD60D /* Assets.xcassets */,
 				050C0AAB27BAE89600CBD60D /* Preview Content */,
+				050C0ACF27BAE8AE00CBD60D /* ApplicationState.swift */,
+				050C0AD127BAE97400CBD60D /* SubView.swift */,
 			);
 			path = SheeKitTest;
 			sourceTree = "<group>";
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = SheeKitTest;
+			packageProductDependencies = (
+				050C0AD427BAEB9000CBD60D /* SheeKit */,
+			);
 			productName = SheeKitTest;
 			productReference = 050C0AA227BAE89300CBD60D /* SheeKitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 050C0A9927BAE89300CBD60D;
+			packageReferences = (
+				050C0AD327BAEB9000CBD60D /* XCRemoteSwiftPackageReference "SheeKit" */,
+			);
 			productRefGroup = 050C0AA327BAE89300CBD60D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050C0AD027BAE8AE00CBD60D /* ApplicationState.swift in Sources */,
+				050C0AD227BAE97400CBD60D /* SubView.swift in Sources */,
 				050C0AA827BAE89300CBD60D /* ContentView.swift in Sources */,
 				050C0AA627BAE89300CBD60D /* SheeKitTestApp.swift in Sources */,
 			);
@@ -585,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		050C0AD327BAEB9000CBD60D /* XCRemoteSwiftPackageReference "SheeKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/edudnyk/SheeKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		050C0AD427BAEB9000CBD60D /* SheeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 050C0AD327BAEB9000CBD60D /* XCRemoteSwiftPackageReference "SheeKit" */;
+			productName = SheeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 050C0A9A27BAE89300CBD60D /* Project object */;
 }
